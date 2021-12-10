@@ -1,9 +1,12 @@
 server:
-  port: 8081
+  port: 443
   servlet:
     context-path: /learnspringboot
   tomcat:
     max-swallow-size: 100MB
+  ssl:
+    key-store: classpath:jcclw.pfx
+    key-store-password: 9kuFdD1K
 
 limit:
   minMoney: 0.01
